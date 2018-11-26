@@ -1,0 +1,27 @@
+import Vue from "vue";
+import Vuex from "vuex";
+import actions from "./actions";
+import cart from "./modules/cart";
+import products from "./modules/products";
+
+Vue.use(Vuex);
+
+export const store = new Vuex.Store({
+  modules: {
+    cart,
+    products
+  },
+
+  state: {
+    // all the data will go here
+    // key: value
+  },
+
+  getters : {
+      // computed properties 
+  },
+  actions,
+  mutations : {
+
+  }
+});
